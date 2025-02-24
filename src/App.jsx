@@ -1,8 +1,16 @@
 import React from "react"; // default export
 import { createRoot } from "react-dom/client";
 
+import Header from "./Header";
+import Footer from "./Footer";
+
 const App = function () {
-  return <h1>Welcome!</h1>;
+  return (
+    <div>
+      <Header />
+      <Footer />
+    </div>
+  );
 };
 
 const container = document.getElementById("root");
